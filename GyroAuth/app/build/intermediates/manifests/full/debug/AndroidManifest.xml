@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.adrian.gyroauth"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/start_launcher"
+        android:label="Biometric Authentication*"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.adrian.gyroauth.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.adrian.gyroauth.Measurements"
+            android:label="Measurements" />
+        <activity
+            android:name="com.example.adrian.gyroauth.CalculatorActivity"
+            android:label="Calculator" />
+        <activity
+            android:name="com.example.adrian.gyroauth.Graphs"
+            android:label="Graphs" />
+        <activity
+            android:name="com.example.adrian.gyroauth.LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name="com.example.adrian.gyroauth.SensorSeries"
+            android:label="Sensor" />
+        <activity android:name="com.example.adrian.gyroauth.XGraph" />
+        <activity android:name="com.example.adrian.gyroauth.YGraph" />
+        <activity android:name="com.example.adrian.gyroauth.ZGraph" />
+    </application>
+
+</manifest>
